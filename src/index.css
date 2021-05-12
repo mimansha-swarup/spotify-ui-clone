@@ -193,8 +193,10 @@ body {
 .music-card .singer {
     font-size: 14px;
     display: block;
-    margin-bottom: 20px;
+    margin-bottom: 1.5rem;
+    /* margin-top: .5rem; */
     word-wrap: break-word;
+    color: rgba(255, 255, 255, 0.70);
 }
 
 .music-card img {
@@ -285,7 +287,7 @@ body {
 .song-controller-icons {
     color: rgba(255, 255, 255, 0.75);
     font-size: 1.2rem;
-    padding: 0 4rem;
+    padding: 0 5rem;
 }
 
 .song-time {
