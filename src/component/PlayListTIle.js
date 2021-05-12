@@ -1,24 +1,21 @@
-import {Songs} from "./db";
+import { Songs } from "./db";
 import MusicCard from "./MusicCard";
 
 const PlayListTile = () => {
     return ( 
-        <div>
-        {    
-            Songs.map((tile)=>(
-                <div key={tile.title}>
-                
-                <h1 style={{fontSize:"24px"}}>{tile.title}</h1>
-                <MusicCard gerneTile= {tile.list} />
+       
+        Songs.map((tile) => (
+            <div className = "genre-tile" key = { tile.title } >
+                <div className="genre-header">
+                    <h1 style = {{ fontSize: "24px" } } > { tile.title } </h1> 
+                    <h5 style={{color: "rgba(255,255,255,0.70)"}}>See more</h5>
                 </div>
+                <MusicCard gerneTile = { tile.list }/> 
+            </div>
 
-            ))
-
-        }
-        
-        
-        </div>
-     );
+        ))
+      
+    );
 }
- 
+
 export default PlayListTile;

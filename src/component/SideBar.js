@@ -3,11 +3,13 @@ import { RiHomeFill,RiSearchLine ,RiHeartFill  } from 'react-icons/ri'
 import { VscLibrary } from 'react-icons/vsc'
 import { MdAddBox } from 'react-icons/md'
 
+
 const SideBar = () => {
     return ( 
       <IconContext.Provider value={{ className: 'tile-logo'}}>
       
       <aside className="side-nav">
+        <img className="logo" src="https://raw.githubusercontent.com/mimansha-swarup/spotify-ui-clone/main/public/onspotbg.png" alt="logo" />
         <div className="nav-tile"> <RiHomeFill  /> <span> Home </span></div>
         
         <div className="nav-tile"> <RiSearchLine /> <span> Search </span></div>
