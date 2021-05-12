@@ -1,33 +1,108 @@
 export const Songs = [{
+
     title: "Recently Played",
     list: [{
+            song: "Liggi",
+            singer: "Ritviz",
+            image: "https://raw.githubusercontent.com/mimansha-swarup/spotify-ui-clone/main/img_db/Recently%20Played/ligi.jpg",
+
+            songsLst: [{
+                id: "1",
+                songName: "Liggi",
+                singerName: "Ritviz",
+                duration: "3:01"
+            }]
+        },
+        {
             song: "Rang Lageya",
             singer: "Mohit Chauhan",
-            duration: "3:47",
-            image: "https://raw.githubusercontent.com/mimansha-swarup/spotify-ui-clone/main/img_db/Recently%20Played/RangLageya.jpg"
+            image: "https://raw.githubusercontent.com/mimansha-swarup/spotify-ui-clone/main/img_db/Recently%20Played/RangLageya.jpg",
+            songsLst: [{
+                id: "1",
+                songName: "Rang Lageya",
+                singerName: "Mohit Chauhan",
+                duration: "3:47",
+            }]
+
         }, {
             song: "Raba Mehar Kari",
             singer: "Darshan Raval",
-            duration: "3:28",
-            image: "https://raw.githubusercontent.com/mimansha-swarup/spotify-ui-clone/main/img_db/Recently%20Played/RabaMeharKari.jpg"
+            image: "https://raw.githubusercontent.com/mimansha-swarup/spotify-ui-clone/main/img_db/Recently%20Played/RabaMeharKari.jpg",
+            songsLst: [{
+                id: "1",
+                songName: "Raba Mehar Kari",
+                singerName: "Darshan Raval",
+                duration: "3:28",
+            }]
+
         },
         {
-            song: "Filhal",
-            singer: "B Praak",
-            duration: "4:15",
-            image: "https://raw.githubusercontent.com/mimansha-swarup/spotify-ui-clone/main/img_db/Recently%20Played/FIlhal.jpg"
+            song: "Agent Vinod",
+            singer: "Pritam",
+            image: "https://raw.githubusercontent.com/mimansha-swarup/spotify-ui-clone/main/img_db/Recently%20Played/Raaabta.jpg",
+            songsLst: [{
+                id: "1",
+                songName: "I'll DO THe Talking Tonight",
+                singerName: "Pritam,Neeraj Shridhar",
+                duration: "4:15",
+            }, {
+                id: "2",
+                songName: "Raabta",
+                singerName: "Pritam, Arijit Singh",
+                duration: "4:03",
+            }, {
+                id: "3",
+                songName: "Raabta(Kehte Hain Kudha Ne)",
+                singerName: "Pritam, Shreya Goshal",
+                duration: "4:49",
+            }, {
+                id: "4",
+                songName: "Pungi",
+                singerName: "Pritam,Mikka Singh",
+                duration: "4:07",
+            }, ]
         },
         {
-            song: "Raabta",
-            singer: "Pritam, Arijit Singh",
-            duration: "4:03",
-            image: "https://raw.githubusercontent.com/mimansha-swarup/spotify-ui-clone/main/img_db/Recently%20Played/Raaabta.jpg"
-        },
-        {
-            song: "Teri Miti",
-            singer: "Arko, B Praak",
+            song: "Kesari",
+            singer: "Various Artist",
             duration: "5:13",
-            image: "https://raw.githubusercontent.com/mimansha-swarup/spotify-ui-clone/main/img_db/Recently%20Played/veMahi.jpg"
+            image: "https://raw.githubusercontent.com/mimansha-swarup/spotify-ui-clone/main/img_db/Recently%20Played/kesari.jpg",
+            songsLst: [{
+                id: "1",
+                songName: "EK Onkaar",
+                singerName: "Jasbir Jassi",
+                duration: "1:02",
+            }, {
+                id: "2",
+                songName: "Ve Maahi",
+                singerName: "Arijit Singh, Asees Kaur",
+                duration: "3:43",
+            }, {
+                id: "3",
+                songName: "Teri Miti",
+                singerName: "Arko, B praak",
+                duration: "5:13",
+            }, {
+                id: "4",
+                songName: "Sanu Kehndi",
+                singerName: "Tanishk Bagchi,Romy",
+                duration: "2:47",
+            }, {
+                id: "5",
+                songName: "Ajj Singh Garjega",
+                singerName: "Jazzy B",
+                duration: "4:02",
+            }, {
+                id: "6",
+                songName: "Deh Shiva(Male Version)",
+                singerName: "Sukwinder Singh",
+                duration: "3:11",
+            }, {
+                id: "7",
+                songName: "Deh Shiva(Female Version)",
+                singerName: "Jasleen Royal",
+                duration: "2:35",
+            }, ]
         }
     ]
 }, {
@@ -172,14 +247,14 @@ export const Songs = [{
             image: "https://raw.githubusercontent.com/mimansha-swarup/spotify-ui-clone/main/img_db/90s%20hit/wohldkihaikahan.jpg"
         },
         {
-            song: "Mohabatein",
+            song: "HUmko Humi se Chura Lo Tujh ko jana dejd sanam",
             singer: "Grisel Chinchay",
             duration: "4:50",
             image: "https://raw.githubusercontent.com/mimansha-swarup/spotify-ui-clone/main/img_db/90s%20hit/HumkoHUmiSeChuraLO.jpg"
         },
         {
             song: "Tujhe Dekha Toh",
-            singer: "Lata Mangeshkar",
+            singer: "Lata Mangeshkar, Kumar Sanu",
             duration: "5:02",
             image: "https://raw.githubusercontent.com/mimansha-swarup/spotify-ui-clone/main/img_db/90s%20hit/tujheDekhaTOh.jpg"
         },
