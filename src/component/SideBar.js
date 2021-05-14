@@ -2,7 +2,7 @@ import { IconContext  } from 'react-icons'
 import { RiHomeFill,RiSearchLine ,RiHeartFill  } from 'react-icons/ri'
 import { VscLibrary } from 'react-icons/vsc'
 import { MdAddBox } from 'react-icons/md'
-
+import { NavLink } from "react-router-dom";
 
 const SideBar = () => {
     return ( 
@@ -10,14 +10,14 @@ const SideBar = () => {
       
       <aside className="side-nav">
         <img className="logo" src="https://raw.githubusercontent.com/mimansha-swarup/spotify-ui-clone/main/public/onspotbg.png" alt="logo" />
-        <div className="nav-tile"> <RiHomeFill  /> <span> Home </span></div>
+        <NavLink exact to='/'  className="nav-tile" activeClassName="active-now" > <RiHomeFill  /> <span> Home </span></NavLink>
         
-        <div className="nav-tile"> <RiSearchLine /> <span> Search </span></div>
-        <div className="nav-tile"> <VscLibrary  /> <span>Library </span></div>
+        <NavLink to='/search' className="nav-tile" activeClassName="active-now" > <RiSearchLine /> <span> Search </span></NavLink>
+        <NavLink to='/Library' className="nav-tile" activeClassName="active-now" > <VscLibrary  /> <span>Library </span></NavLink>
         
         <hr />
-        <div className="nav-tile"> <MdAddBox /> <span>Add Playlist</span> </div>
-        <div className="nav-tile"> <RiHeartFill /> <span>Liked Songs</span> </div>
+        <NavLink to='/addPlaylst' className="nav-tile" activeClassName="active-now" > <MdAddBox /> <span>Add Playlist</span> </NavLink>
+        <NavLink to='/likedSongs' className="nav-tile" activeClassName="active-now" > <RiHeartFill /> <span>Liked Songs</span> </NavLink>
         <hr />
       </aside>
       
