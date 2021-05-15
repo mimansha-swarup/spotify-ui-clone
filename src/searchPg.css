@@ -1,0 +1,42 @@
+/* #searchLayout{
+    display: inline;
+} */
+
+#genreCategory {
+    margin-bottom: 5rem;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    /* grid-template-rows: repeat(9, 1fr); */
+    grid-gap: 1.5rem;
+    /* grid-row-gap: 1.5rem; */
+    overflow: auto;
+}
+
+.genreCard {
+    height: 11rem;
+    max-width: 11rem;
+    background-color: chartreuse;
+    border-radius: .5rem;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    justify-content: space-between;
+}
+
+.genreCard h4 {
+    padding-left: 1rem;
+    padding-top: .5rem;
+    margin: 0%;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.genreCard img {
+    padding: 0%;
+    height: 6rem;
+    width: 6rem;
+    transform: rotate( 30deg) translate(18%, -2%);
+    align-self: flex-end;
+    justify-self: self-end;
+    /* object-position: 30px 60px; */
+}
