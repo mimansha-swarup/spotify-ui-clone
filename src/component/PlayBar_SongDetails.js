@@ -6,9 +6,9 @@ const SongDetails = () => {
     return ( 
         <IconContext.Provider value={{ className:"song-detail-icon"}}>
             <div className="song-details " >
-                <img src="https://raw.githubusercontent.com/mimansha-swarup/spotify-ui-clone/main/img_db/International%20hit/HighPower.jpg" alt="music cover" />
+                <img src="https://raw.githubusercontent.com/mimansha-swarup/spotify-ui-clone/main/img_db/MadeForYou/HighPower.jpg" alt="music cover" />
                 <div className="column" style={{justifyContent:"center"}}>
-                    <p>SOng Name long name</p>
+                    <p>SOng Name</p>
                     <small>singer</small>
                 </div>
                 <AiOutlineHeart  />

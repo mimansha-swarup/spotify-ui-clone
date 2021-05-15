@@ -129,7 +129,7 @@ export const Songs = [{
             }
         ]
     }, {
-        title: "International Hits",
+        title: "Made For You",
         list: [{
                 song: "100 Ways",
                 singer: "Jackson Wang",
@@ -243,70 +243,194 @@ export const Songs = [{
             }
         ]
     },
-    // DOne Till Here
+    {
+        title: "Popular Band",
+        list: [{
+            song: "One Direction",
+            singer: "Various Artist",
+            image: "https://raw.githubusercontent.com/mimansha-swarup/spotify-ui-clone//main/img_db/Popular%20Band/oneDirection.jpg",
+            songsLst: [{
+                id: "1",
+                songName: "Barish",
+                singerName: "Darshan Raval",
+                duration: "2:51",
+            }]
+        }]
+    },
     {
         title: "You Might Like",
         list: [{
-                song: "Agar Tum Saath Ho",
-                singer: "Alka Yagnik, Arijit Singh",
-                duration: "5:41",
+                song: "Tamasha",
+                singer: "A.R Rahman",
                 image: "https://raw.githubusercontent.com/mimansha-swarup/spotify-ui-clone//main/img_db/you%20might%20like/AgarTumSaat.jpg",
                 songsLst: [{
                     id: "1",
-                    songName: "Barish",
-                    singerName: "Darshan Raval",
-                    duration: "2:51",
+                    songName: "Agar Tum Saath Ho",
+                    singerName: "Alka Yagnik, Arijit Singh",
+                    duration: "5:41",
+                }, {
+                    id: "2",
+                    songName: "Matargashti",
+                    singerName: "Mohit Chauhan",
+                    duration: "5:28",
+                }, {
+                    id: "3",
+                    songName: "Chali Kajani",
+                    singerName: "Sukhwinder Singh",
+                    duration: "5:19",
+                }, {
+                    id: "4",
+                    songName: "Safarnama",
+                    singerName: "Lucky Ali",
+                    duration: "4:11",
                 }]
             }, {
-                song: "Guzaarish",
-                singer: "Javed Ali",
-                duration: "5:27",
-                image: "https://raw.githubusercontent.com/mimansha-swarup/spotify-ui-clone/main/img_db/you%20might%20like/Guzarish.jpg"
+                song: "Ghajni",
+                singer: "A. R. Rahman",
+                image: "https://raw.githubusercontent.com/mimansha-swarup/spotify-ui-clone/main/img_db/you%20might%20like/Guzarish.jpg",
+                songsLst: [{
+                    id: "1",
+                    songName: "Kaise Mujhe",
+                    singerName: "Shreya Ghoshal, Benny Dayal",
+                    duration: "3:46",
+                }, {
+                    id: "2",
+                    songName: "Guzarish",
+                    singerName: "Javed Ali,Sonu Nigam",
+                    duration: "4:28",
+                }]
             },
             {
-                song: "Main Agar Kahoon",
-                singer: "Sonu Niggam",
-                duration: "5:08",
-                image: "https://raw.githubusercontent.com/mimansha-swarup/spotify-ui-clone/main/img_db/you%20might%20like/Main%20agar%20kahoon.jpg"
+                song: "Om Shanti Om",
+                singer: "Various Artist",
+                image: "https://raw.githubusercontent.com/mimansha-swarup/spotify-ui-clone/main/img_db/you%20might%20like/Main%20agar%20kahoon.jpg",
+                songsLst: [{
+                    id: "1",
+                    songName: "Main Agar Kahoon",
+                    singerName: "Sonu Nigam, Shreya Ghoshal",
+                    duration: "5:08",
+                }, {
+                    id: "2",
+                    songName: "Aankhon Mein Teri",
+                    singerName: "K.K.",
+                    duration: "4:01",
+                }, {
+                    id: "3",
+                    songName: "Jag Soona Soona Lage",
+                    singerName: "Rahat Fateh Ali Khan",
+                    duration: "5:29",
+                }]
             },
             {
-                song: "Kaise Hua",
-                singer: "Vishal Mishra",
-                duration: "3:54",
-                image: "https://raw.githubusercontent.com/mimansha-swarup/spotify-ui-clone/main/img_db/you%20might%20like/kaise%20hua.jpg"
+                song: "Kabir Singh",
+                singer: "Various Artists",
+                image: "https://raw.githubusercontent.com/mimansha-swarup/spotify-ui-clone/main/img_db/you%20might%20like/kaise%20hua.jpg",
+                songsLst: [{
+                    id: "1",
+                    songName: "Bekhayali",
+                    singerName: "Sachet Tandon",
+                    duration: "6:12",
+                }, {
+                    id: "2",
+                    songName: "Tujhe Kitna Chane Laaga",
+                    singerName: "Arijit Singh",
+                    duration: "4:45",
+                }, {
+                    id: "3",
+                    songName: "Tera Ban Jaunga",
+                    singerName: "Akhil Sachdeva, Tulsi Kumar",
+                    duration: "3:56",
+                }]
             },
             {
-                song: "Main Bola Hey",
+                song: "Main Bola Hey!",
                 singer: "Karthik Rao",
-                duration: "2:33",
-                image: "https://raw.githubusercontent.com/mimansha-swarup/spotify-ui-clone/main/img_db/you%20might%20like/wo%20boli%20hey.jpg"
+                image: "https://raw.githubusercontent.com/mimansha-swarup/spotify-ui-clone/main/img_db/you%20might%20like/wo%20boli%20hey.jpg",
+                songsLst: [{
+                    id: "1",
+                    songName: "Main Bola Hey!",
+                    singerName: "Karthik Rao",
+                    duration: "2:33",
+                }]
             }
         ]
-    }, {
+    },
+
+    {
         title: "Podcast",
         list: [{
                 song: "The Sadhguru Podcast",
                 singer: "",
-                image: "https://raw.githubusercontent.com/mimansha-swarup/spotify-ui-clone//main/img_db/podcast/sadhguru.jpg"
+                image: "https://raw.githubusercontent.com/mimansha-swarup/spotify-ui-clone//main/img_db/podcast/sadhguru.jpg",
+                songsLst: [{
+                    id: "1",
+                    songName: "Nigt Owl or Early Bird",
+                    singerName: "SadhGuru",
+                    duration: "15:41",
+                }, {
+                    id: "2",
+                    songName: "Head or Heart",
+                    singerName: "sadhGuru",
+                    duration: "13:20",
+                }]
             }, {
                 song: "The History of India",
                 singer: "",
-                image: "https://raw.githubusercontent.com/mimansha-swarup/spotify-ui-clone/main/img_db/podcast/India.jpg"
+                image: "https://raw.githubusercontent.com/mimansha-swarup/spotify-ui-clone/main/img_db/podcast/India.jpg",
+                songsLst: [{
+                    id: "1",
+                    songName: "The King",
+                    singerName: "",
+                    duration: "12:41",
+                }, {
+                    id: "2",
+                    songName: "Mishap",
+                    singerName: "",
+                    duration: "15:28",
+                }, {
+                    id: "3",
+                    songName: "Empire",
+                    singerName: "",
+                    duration: "5:19",
+                }]
             },
             {
                 song: "The Musafir Stories",
                 singer: "",
-                image: "https://raw.githubusercontent.com/mimansha-swarup/spotify-ui-clone/main/img_db/podcast/Musafir.jpg"
+                image: "https://raw.githubusercontent.com/mimansha-swarup/spotify-ui-clone/main/img_db/podcast/Musafir.jpg",
+                songsLst: [{
+                    id: "1",
+                    songName: "Toy Train to Shimla",
+                    singerName: "Saif, Faiza, amp",
+                    duration: "45:41",
+                }, {
+                    id: "2",
+                    songName: "Cycling Across India",
+                    singerName: "Saif, Faiza, amp",
+                    duration: "25:28",
+                }]
             },
             {
                 song: "Podcast Junkies",
                 singer: "",
-                image: "https://raw.githubusercontent.com/mimansha-swarup/spotify-ui-clone/main/img_db/podcast/junkies.jpg"
+                image: "https://raw.githubusercontent.com/mimansha-swarup/spotify-ui-clone/main/img_db/podcast/junkies.jpg",
+                songsLst: [{
+                    id: "1",
+                    songName: "Don't Be Affraid",
+                    singerName: "",
+                    duration: "7:41",
+                }]
             },
             {
                 song: "7 Good Minutes Daily",
                 singer: "",
-                image: "https://raw.githubusercontent.com/mimansha-swarup/spotify-ui-clone/main/img_db/podcast/7minutes.jpg"
+                image: "https://raw.githubusercontent.com/mimansha-swarup/spotify-ui-clone/main/img_db/podcast/7minutes.jpg",
+                songsLst: [{
+                    id: "1",
+                    songName: "Overcoming Fear",
+                    singerName: "",
+                    duration: "7:11",
+                }]
             }
         ]
     }, {
@@ -314,31 +438,58 @@ export const Songs = [{
         list: [{
                 song: "Pehla Nasha",
                 singer: "Udit Narayan",
-                duration: "4:51",
-                image: "https://raw.githubusercontent.com/mimansha-swarup/spotify-ui-clone//main/img_db/90s%20hit/pehlanasha.jpg"
+                image: "https://raw.githubusercontent.com/mimansha-swarup/spotify-ui-clone//main/img_db/90s%20hit/pehlanasha.jpg",
+                songsLst: [{
+                    id: "1",
+                    songName: "Pehla Nasha",
+                    singerName: "Udit Narayan",
+                    duration: "4:41",
+                }]
             }, {
                 song: "Dil Chata Hai",
-                singer: "Shankar-Eshan-Loy",
-                duration: "3:06",
-                image: "https://raw.githubusercontent.com/mimansha-swarup/spotify-ui-clone/main/img_db/90s%20hit/wohldkihaikahan.jpg"
+                singer: "Shankar, Eshan-Loy",
+                image: "https://raw.githubusercontent.com/mimansha-swarup/spotify-ui-clone/main/img_db/90s%20hit/wohldkihaikahan.jpg",
+                songsLst: [{
+                    id: "1",
+                    songName: "Dil Chata Hai",
+                    singerName: "Shankar, Eshan-Loy",
+                    duration: "3:06",
+                }]
             },
             {
-                song: "HUmko Humi se Chura Lo Tujh ko jana dejd sanam",
-                singer: "Grisel Chinchay",
-                duration: "4:50",
-                image: "https://raw.githubusercontent.com/mimansha-swarup/spotify-ui-clone/main/img_db/90s%20hit/HumkoHUmiSeChuraLO.jpg"
+                song: "Humko Humise Chura Lo",
+                singer: "Lata Mangeshkar, Udit Narayan",
+                image: "https://raw.githubusercontent.com/mimansha-swarup/spotify-ui-clone/main/img_db/90s%20hit/HumkoHUmiSeChuraLO.jpg",
+                songsLst: [{
+                    id: "1",
+                    songName: "Humko Humise Chura Lo",
+                    singerName: "Lata Mangeshkar, Udit Narayan",
+                    duration: "4:50",
+                }]
             },
             {
                 song: "Tujhe Dekha Toh",
                 singer: "Lata Mangeshkar, Kumar Sanu",
-                duration: "5:02",
-                image: "https://raw.githubusercontent.com/mimansha-swarup/spotify-ui-clone/main/img_db/90s%20hit/tujheDekhaTOh.jpg"
+                image: "https://raw.githubusercontent.com/mimansha-swarup/spotify-ui-clone/main/img_db/90s%20hit/tujheDekhaTOh.jpg",
+                songsLst: [{
+                    id: "1",
+                    songName: "Tujhe Dekha Toh",
+                    singerName: "Lata Mangeshkar, Kumar Sanu",
+                    duration: "5:02",
+                }]
             },
             {
                 song: "Tadap Tadap",
-                singer: "KK,Dominique",
+                singer: "KK, Dominique",
                 duration: "6:37",
-                image: "https://raw.githubusercontent.com/mimansha-swarup/spotify-ui-clone/main/img_db/90s%20hit/chaandchupa.jpg"
+                image: "https://raw.githubusercontent.com/mimansha-swarup/spotify-ui-clone/main/img_db/90s%20hit/chaandchupa.jpg",
+                songsLst: [{
+                    id: "1",
+                    songName: "Tadap Tadap",
+                    singerName: "KK, Dominique",
+                    duration: "6:37",
+                }]
+
             }
         ]
     }
