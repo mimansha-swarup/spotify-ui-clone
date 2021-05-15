@@ -1,6 +1,7 @@
 import { IoChevronBackCircleOutline ,IoChevronForwardCircleOutline } from 'react-icons/io5'
 import { HiUserCircle,HiChevronDown } from 'react-icons/hi'
 import { IconContext  } from 'react-icons'
+
 const NavBar = () => {
     return ( 
         
