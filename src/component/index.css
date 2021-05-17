@@ -130,7 +130,7 @@ a:-webkit-any-link {
     line-height: 26px;
     text-align: start;
     width: 90%;
-    font-size: 1vw;
+    font-size: minmax(1.2vw, 1rem);
 }
 
 .nav-tile:hover {
@@ -144,8 +144,8 @@ a:-webkit-any-link {
 
 .tile-logo {
     vertical-align: middle;
-    font-size: 1.5vw;
-    margin-right: 20px;
+    font-size: minmax(2vw, 1.5rem);
+    margin-right: 10px;
     margin-left: 5px;
 }
 
@@ -278,7 +278,7 @@ a:-webkit-any-link {
 .volume-controller hr {
     background-color: rgba(255, 255, 255, 0.55);
     height: .15rem;
-    width: 15%;
+    width: 25%;
     margin: 0;
     border: none;
     padding: 0;
