@@ -1,5 +1,5 @@
-import './searchPg.css';
-import {category,topPicks} from './searchPgDb';
+import '../component/searchPg.css';
+import {category,topPicks} from '../db/searchPgDb';
 // import { FaPlayCircle  } from 'react-icons/fa'
 // import { useEffect } from 'react';
 
@@ -13,7 +13,7 @@ const SearchPg = () => {
             <div id="top-Category">
             {
                 topPicks.list.map((el)=>(
-                    <div className="genreCard" style={{backgroundColor:el.color }}  key={el.id}>
+                    <div className="genreCard" style={{backgroundColor:el.color,minHeight:'11rem',minWidth:'21rem' }}  key={el.id}>
                     <h4>{el.name}</h4>
                     <img src={baseurl+el.id+".jpg"} alt="cover" style={{width:'7.5rem', height:'7.5rem'}} />
                 </div>

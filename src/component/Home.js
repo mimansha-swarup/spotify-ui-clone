@@ -1,4 +1,5 @@
-import PlayListTile from "./PlayListTIle"
+import PlayListTile from "./HomeComponent/PlayListTIle"
+import './HomeComponent/home.css'
 
 const Home = () => {
     return ( 

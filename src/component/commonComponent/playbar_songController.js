@@ -9,7 +9,7 @@ const SongController = () => {
             <div className="song-controller-icons row" style={{justifyContent:"space-between"}}>
                 <IoShuffle style={{color:"#ffrgba(255, 255, 255, 0.55)",}} />
                 <AiFillStepBackward/>
-                <FaPlayCircle style={{color:"#fff",fontSize:"1.7rem"}} />
+                <FaPlayCircle style={{color:"#fff",fontSize:"1.7vw"}} />
                 <AiFillStepForward/>
                 <IoRepeat style={{color:"#ffrgba(255, 255, 255, 0.55)",}} />
                 

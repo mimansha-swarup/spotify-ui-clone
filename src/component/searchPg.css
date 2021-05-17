@@ -2,20 +2,24 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 1.5rem;
-    overflow: auto;
+    overflow-x: scroll;
+    /* min-height: 11rem;
+    min-width: 21rem; */
 }
 
 #genreCategory {
     margin-bottom: 5rem;
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-gap: 1.5rem;
+    /* grid-template-columns: repeat(minmax(auto-fill, 6), auto-fill); */
+    /* grid-template-columns: repeat(minmax(5, 6), 1fr); */
+    grid-template-columns: repeat( 6, 1fr);
+    grid-gap: 1.5vw;
     overflow: auto;
 }
 
 .genreCard {
-    height: 11rem;
-    /* max-width: 11rem; */
+    min-height: 11rem;
+    min-width: 11rem;
     border-radius: .5rem;
     display: flex;
     flex-direction: column;
@@ -39,4 +43,12 @@
     align-self: flex-end;
     justify-self: self-end;
     /* object-position: 30px 60px; */
+}
+
+#top-Category::-webkit-scrollbar {
+    display: none;
+}
+
+#genreCategory::-webkit-scrollbar {
+    display: none;
 }

@@ -1,12 +1,13 @@
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Home from "./component/Home";
-import NavBar from "./component/NabBar";
-import PlayBar from "./component/PlayBar";
+import NavBar from "./component/commonComponent/NabBar";
+import PlayBar from "./component/commonComponent/PlayBar";
 
-import SideBar from "./component/SideBar";
-import SearchPg from './searchpg';
+import SideBar from "./component/commonComponent/SideBar";
+import LikedSongs from "./component/LikePage";
+import SearchPg from './component/searchpg';
 // import { useEffect } from 'react';
-import ScrollToTop from './component/ScrollToTop';
+import ScrollToTop from './component/commonComponent/ScrollToTop';
 
 
 
@@ -25,16 +26,16 @@ function App() {
 
 
                 <Switch>
-                <Route exact path='/' component={Home}/>
+                    <Route exact path='/' component={Home}/>
+                    <Route path='/search' component={SearchPg} />
+                    <Route path='/collection/tracks' component={LikedSongs} />
                 
+                </Switch>
+                <PlayBar />
                 
-                        <Route path='/search' component={SearchPg} />
-                
-                
-                    </Switch>
 
                 
-                <PlayBar />
+                
             </div>
         </Router>
     );

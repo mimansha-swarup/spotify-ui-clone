@@ -1,0 +1,61 @@
+.genre-tile {
+    display: flex;
+    flex-direction: column;
+}
+
+.genre-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.music-list {
+    /* padding: 10px; */
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 4.5vw;
+    overflow-x: scroll;
+    background-color: #121212;
+}
+
+.music-card {
+    margin: 10px 0;
+    padding: 5px 1rem;
+    background-color: rgb(26, 26, 26);
+    display: block;
+    text-align: left;
+    box-shadow: 2px 2px 30px rgba(3, 3, 3, 0.55);
+}
+
+.music-card .title {
+    font-weight: 600;
+    font-size: 17px;
+    display: block;
+    word-wrap: normal;
+    /* white-space: nowrap; */
+    margin: 5px 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.music-card .singer {
+    font-size: 14px;
+    display: block;
+    margin-bottom: 1.5rem;
+    /* margin-top: .5rem; */
+    word-wrap: break-word;
+    color: rgba(255, 255, 255, 0.70);
+}
+
+.music-card img {
+    padding: 10px 0;
+    height: 150px;
+    width: 150px;
+    object-position: center;
+    object-fit: cover;
+}
+
+.music-card:hover {
+    /* background-color: rgb(35, 35, 35); */
+    background-image: linear-gradient(to top, #0a0a0a, #1d9425);
+}

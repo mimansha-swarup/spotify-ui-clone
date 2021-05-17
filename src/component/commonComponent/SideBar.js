@@ -17,7 +17,7 @@ const SideBar = () => {
         
         <hr />
         <NavLink to='/addPlaylst' className="nav-tile" activeClassName="active-now" > <MdAddBox /> <span>Add Playlist</span> </NavLink>
-        <NavLink to='/likedSongs' className="nav-tile" activeClassName="active-now" > <RiHeartFill /> <span>Liked Songs</span> </NavLink>
+        <NavLink to='/collection/tracks' className="nav-tile" activeClassName="active-now" > <RiHeartFill /> <span>Liked Songs</span> </NavLink>
         <hr />
       </aside>
       
