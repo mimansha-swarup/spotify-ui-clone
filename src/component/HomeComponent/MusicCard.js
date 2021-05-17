@@ -1,4 +1,4 @@
-import { FiPlayCircle  } from 'react-icons/fi'
+import { BsPlayFill  } from 'react-icons/bs'
 const MusicCard = ({gerneTile}) => {
     return ( 
         <div className="music-list">
@@ -6,9 +6,11 @@ const MusicCard = ({gerneTile}) => {
             gerneTile.map((parser) => (
             <div className="music-card" key={parser.song}>
             <img src={`${parser.image}`} alt="s"  />
-            <FiPlayCircle className="hover-paybtn" style={{color:'green'}} />
-              <span className="title">{parser.song}</span>
-              <span className="singer">{parser.singer}</span>
+            
+            <BsPlayFill className="hover-playbtn"  />
+            
+            <span className="title">{parser.song}</span>
+            <span className="singer">{parser.singer}</span>
           
             </div> 
             
