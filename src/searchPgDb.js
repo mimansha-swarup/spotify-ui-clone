@@ -1,3 +1,20 @@
+export const topPicks = {
+    title: "Your Top Genres",
+    list: [{
+        id: "top1",
+        name: "Pop",
+        color: '#8D67AB'
+    }, {
+        id: "top2",
+        name: "Bollywood",
+        color: '#FF4632'
+    }, {
+        id: "top3",
+        name: "Indie",
+        color: '#608108'
+    }]
+
+}
 export const category = {
     title: "Browse All",
     list: [{

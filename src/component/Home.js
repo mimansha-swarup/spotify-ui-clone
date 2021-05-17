@@ -2,7 +2,7 @@ import PlayListTile from "./PlayListTIle"
 
 const Home = () => {
     return ( 
-        <div>
+        <div className="content">
         <PlayListTile />
  
         

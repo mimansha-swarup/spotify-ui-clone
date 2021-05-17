@@ -1,21 +1,21 @@
-/* #searchLayout{
-    display: inline;
-} */
+#top-Category {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1.5rem;
+    overflow: auto;
+}
 
 #genreCategory {
     margin-bottom: 5rem;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    /* grid-template-rows: repeat(9, 1fr); */
     grid-gap: 1.5rem;
-    /* grid-row-gap: 1.5rem; */
     overflow: auto;
 }
 
 .genreCard {
     height: 11rem;
-    max-width: 11rem;
-    background-color: chartreuse;
+    /* max-width: 11rem; */
     border-radius: .5rem;
     display: flex;
     flex-direction: column;
