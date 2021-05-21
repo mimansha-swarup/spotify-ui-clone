@@ -1,3 +1,7 @@
+body {
+    --primaryBg: #0f0f0f;
+}
+
 .genre-tile {
     display: flex;
     flex-direction: column;
@@ -15,42 +19,43 @@
     grid-template-columns: repeat(5, 1fr);
     grid-gap: 4.5vw;
     overflow-x: scroll;
-    background-color: #121212;
+    background-color: var(--primaryBg);
 }
 
 .music-card {
     margin: 10px 0;
     padding: 5px 1rem;
+    max-width: 9.4rem;
     background-color: #181818;
     display: block;
     text-align: left;
     position: relative;
     border-radius: .5rem;
-    box-shadow: 5px 5px 10px #0c0c0c, -3px -3px 10px #2a2a2a;
-    /* box-shadow: 1px 1px 2px #161616, -1px -1px 2px #1e1e1e; */
+    box-shadow: 2px 2px 30px rgba(3, 3, 3, 0.55);
+    /* box-shadow: inset 12px 12px 26px #0c0c0c, inset -12px -12px 26px #262626; */
 }
 
 .music-card .title {
     font-weight: 600;
     font-size: 17px;
     display: block;
-    word-wrap: normal;
+    /* word-wrap: normal; */
     align-self: center;
     /* white-space: nowrap; */
     margin: 5px 0;
     text-overflow: ellipsis;
     overflow: hidden;
-    /* transform: translate(0%, -100%); */
 }
 
 .music-card .singer {
     font-size: 14px;
     display: block;
     margin-bottom: 1.5rem;
-    word-wrap: break-word;
+    /* word-wrap: break-word; */
     color: rgba(255, 255, 255, 0.70);
     align-self: center;
-    /* transform: translate(0%, -100%); */
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 .music-card img {
@@ -63,11 +68,30 @@
 
 .music-card:hover {
     background-color: #282828;
-    box-shadow: inset 5px 5px 10px #0c0c0c, inset -5px -5px 10px #3d3d3d;
 }
 
 .music-card:hover .hover-playbtn {
+    animation: fadeIn .3s;
+    /* transition-delay: 1s; */
     visibility: visible;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 0.25;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    75% {
+        opacity: 0.75;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 .hover-playbtn {
@@ -84,4 +108,13 @@
     position: absolute;
     visibility: hidden;
     /* margin: 0%; */
+}
+
+.neumorphisim-musiccard {
+    box-shadow: 5px 5px 15px #000000, -5px -5px 15px #2a2a2a;
+}
+
+.neumorphisim-musiccard:hover {
+    background-color: inherit;
+    box-shadow: inset 12px 12px 20px #0a0a0a, inset -12px -12px 20px #212121;
 }

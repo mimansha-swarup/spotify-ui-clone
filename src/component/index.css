@@ -2,7 +2,9 @@ body {
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
     color: #fff;
-    background-color: #121212;
+    --sideBarBg: #0a0a0a;
+    --primaryBg: #0f0f0f;
+    background-color: var(--primaryBg);
 }
 
 .App {
@@ -16,8 +18,12 @@ body {
 
 .active-now:-webkit-any-link {
     color: #ffffff;
-    background-color: #282828;
+    /* background-color: #282828; */
+    background-color: var(--sideBarBg);
     border-radius: 5px;
+    /* background: linear-gradient(145deg, #242424, #2b2b2b); */
+    /* box-shadow: inset 7px 7px 10px #040504, inset -7px -7px 10px #2e2e2e; */
+    box-shadow: inset 7px 7px 12px #000, inset -7px -7px 8px #181B1A;
 }
 
 a:-webkit-any-link {
@@ -111,7 +117,7 @@ a:-webkit-any-link {
     grid-column: 1/3;
     grid-row: 1/12;
     padding: 10px;
-    background-color: #000;
+    background-color: var(--sideBarBg);
     color: rgb(179, 179, 179, 0.75);
 }
 
@@ -303,6 +309,10 @@ a:-webkit-any-link {
 /* Handle */
 
  ::-webkit-scrollbar-thumb {
+    background: rgba(128, 128, 128, .50);
+}
+
+::-webkit-scrollbar-corner {
     background: rgba(128, 128, 128, .50);
 }
 

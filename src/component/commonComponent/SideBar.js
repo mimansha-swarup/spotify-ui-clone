@@ -13,10 +13,10 @@ const SideBar = () => {
         <NavLink exact to='/'  className="nav-tile" activeClassName="active-now" > <RiHomeFill  /> <span> Home </span></NavLink>
         
         <NavLink to='/search' className="nav-tile" activeClassName="active-now" > <RiSearchLine /> <span> Search </span></NavLink>
-        <NavLink to='/Library' className="nav-tile" activeClassName="active-now" > <VscLibrary  /> <span>Library </span></NavLink>
+        <NavLink exact to='/collection' className="nav-tile" activeClassName="active-now" > <VscLibrary  /> <span>Library </span></NavLink>
         
         <hr />
-        <NavLink to='/addPlaylst' className="nav-tile" activeClassName="active-now" > <MdAddBox /> <span>Add Playlist</span> </NavLink>
+        <NavLink to='/add' className="nav-tile" activeClassName="active-now" > <MdAddBox /> <span>Add Playlist</span> </NavLink>
         <NavLink to='/collection/tracks' className="nav-tile" activeClassName="active-now" > <RiHeartFill /> <span>Liked Songs</span> </NavLink>
         <hr />
       </aside>
