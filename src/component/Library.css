@@ -1,0 +1,55 @@
+#like-grid {
+    /* position: absolute; */
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    overflow: auto;
+    grid-gap: 2vw;
+    /* padding: 2rem; */
+}
+
+#likedbox {
+    min-height: 10rem;
+    min-width: 9.4rem;
+    grid-column: 1 /3;
+    background-image: linear-gradient(to bottom right, #4A14F4, #8B88E5);
+    border-radius: 0.3rem;
+    padding: 1rem 1.7rem;
+}
+
+.col-rev {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+#likedbox p {
+    display: block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.heading {
+    margin: 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.sub-navbar {
+    display: flex;
+    justify-content: center;
+    /* position: fixed;
+    z-index: 1;
+    right: 35vw; */
+}
+
+.sub-navbar button {
+    background-color: #0f0f0f;
+    color: #fff;
+    font-size: 1.2rem;
+    border: none;
+    margin-left: 2rem;
+}
+
+#like-grid::-webkit-scrollbar {
+    display: none;
+}
