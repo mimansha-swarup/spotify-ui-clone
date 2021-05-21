@@ -1,22 +1,16 @@
 import { BsPlayFill  } from 'react-icons/bs'
-const MusicCard = ({gerneTile}) => {
+const MusicCard = ({parser,styleCheck}) => {
     return ( 
-        <div className="music-list">
-        {
-            gerneTile.map((parser) => (
-            <div className="music-card" key={parser.song}>
-            <img src={`${parser.image}`} alt="s"  />
+        <div className={styleCheck?"music-card neumorphisim-musiccard":"music-card"} >
+        <img src={`${parser.image}`} alt="s"  />
+        
+        <BsPlayFill className="hover-playbtn"  />
+        
+        <span className="title">{parser.song}</span>
+        <span className="singer">{parser.singer}</span>
+        
+        </div> 
             
-            <BsPlayFill className="hover-playbtn"  />
-            
-            <span className="title">{parser.song}</span>
-            <span className="singer">{parser.singer}</span>
-          
-            </div> 
-            
-            ))
-          }  
-          </div>
      );
 }
  
