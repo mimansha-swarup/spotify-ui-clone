@@ -1,0 +1,86 @@
+.row {
+    display: flex;
+}
+
+.col {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+#headerbox {
+    padding: 1rem 0;
+}
+
+#headerbox img {
+    height: 220px;
+    width: 220px;
+    margin-right: 1rem;
+}
+
+#headerbox h1 {
+    font-size: 4rem;
+    margin: .8rem 0;
+}
+
+#headerbox h5 {
+    margin: 0;
+}
+
+#playbtn {
+    padding: .6rem;
+    background-color: #1d9325;
+    font-size: 1.7rem;
+    color: white;
+    border-radius: 100%;
+    border: 0 px transparent;
+    align-self: center;
+    vertical-align: middle;
+}
+
+#playbtn:hover {
+    transform: scale(1.2);
+}
+
+#details {
+    margin: 1rem 0;
+    border-collapse: collapse;
+    width: 100%;
+    color: #a1a1a1;
+}
+
+#details th {
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: left;
+    padding-bottom: 1rem;
+}
+
+#details thead {
+    border-bottom: 1px solid rgba(166, 166, 166.0, 0.5);
+}
+
+#details td {
+    height: 4rem;
+    position: relative;
+    /* padding: 1rem 0; */
+}
+
+#details-play-btn {
+    position: absolute;
+    vertical-align: middle;
+    align-items: center;
+    transform: translate(-10%, 25%);
+    visibility: hidden;
+}
+
+#details tbody tr:hover {
+    color: #fff;
+}
+
+#details tbody tr:hover #details-play-btn {
+    visibility: visible;
+}
+
+#details tbody tr:hover .to-hide {
+    visibility: hidden;
+}
