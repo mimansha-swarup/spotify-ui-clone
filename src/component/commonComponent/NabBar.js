@@ -1,15 +1,19 @@
 import { IoChevronBackCircleOutline ,IoChevronForwardCircleOutline } from 'react-icons/io5'
 import { HiUserCircle,HiChevronDown } from 'react-icons/hi'
 import { IconContext  } from 'react-icons'
+import { useHistory } from "react-router-dom";
 
 const NavBar = () => {
+  const history = useHistory();
     return ( 
         
       <IconContext.Provider value={{ className: 'nav-logo'}}>
-        <div className="nav-details">
+        <header className="nav-details">
           <div className="nav-grid">
-            <IoChevronBackCircleOutline />
-            <IoChevronForwardCircleOutline />
+            <IoChevronBackCircleOutline onClick={()=>history.goBack()} />
+            <IoChevronForwardCircleOutline onClick={()=>history.goForward()} />
+            {console.log(history.goBack)}
+            {console.log(history.goForward)}
           </div>
           <div className="nav-grid">
             <button className="upgrade-btn">
@@ -24,7 +28,7 @@ const NavBar = () => {
           </div>
           
           
-        </div>
+        </header>
       </IconContext.Provider>
       
      );
