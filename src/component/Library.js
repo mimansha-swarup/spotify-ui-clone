@@ -16,11 +16,15 @@ const Library = () => {
     <h1 className="heading">Liked Songs</h1>    
     <p>Liggi, Unstoppable, Jab We Met, Om Shanti Om, One Direction</p>            
     </div>
-    
     {
+        console.log(fav)
+    }
+    {
+        
         fav.map((parser) => (
 
-            <MusicCard parser={parser} styleCheck="" />
+            <MusicCard parser={parser} styleCheck="" key={parser.songsLst.id} />
+            
             
         ) )
       }  

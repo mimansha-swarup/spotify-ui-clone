@@ -7,7 +7,7 @@ const Home = () => {
         
     }, [])
     return ( 
-        <div className="content">
+        <div className="content" style={{padding:"0 2rem"}}>
         <PlayListTile />
  
         

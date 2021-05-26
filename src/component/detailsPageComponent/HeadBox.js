@@ -1,6 +1,6 @@
-const DetailHead = ({imgsrc, heading,desc}) => {
+const DetailHead = ({imgsrc, heading,desc,color}) => {
     return ( 
-        <div id="headerbox" >
+        <div id="headerbox" style={{backgroundColor:color}}>
             <div className="row">
                 <img loading="lazy" src={imgsrc} alt="Coverimage" />
                 <div className="col">

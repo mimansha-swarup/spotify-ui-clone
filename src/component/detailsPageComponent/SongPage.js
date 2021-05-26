@@ -11,12 +11,12 @@ const SongPage = (props) => {
     
     
     return (
-        <div className="content" style={{backgroundImage:"linear-gradient(#1ED760,#0F0F0F 30vh)", backgroundAttachment:"fixed"}}>
-            <DetailHead imgsrc={data.image} heading={data.song} desc={`by ${data.singer}`} /> 
-            <SongListing props={data.songsLst}/>
+        <div className="content" >
+            <DetailHead imgsrc={data.image} heading={data.song} desc={`by ${data.singer}`} color="#084f21"/> 
+            <SongListing props={data.songsLst} color="#084f21" />
             
             {
-            //    {console.log(props.location.state)}
+            //   1ED760 {console.log(props.location.state)}
         }
             
             

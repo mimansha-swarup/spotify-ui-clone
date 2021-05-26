@@ -8,7 +8,10 @@
 }
 
 #headerbox {
-    padding: 1rem 0;
+    padding: .5rem 2rem;
+    padding-top: 2rem;
+    /* background-image: linear-gradient(#1ED760, #0F0F0F 30vh); */
+    background-color: #084f21;
 }
 
 #headerbox img {
@@ -26,7 +29,12 @@
     margin: 0;
 }
 
+#cont-playbtn {
+    padding: 2rem 0;
+}
+
 #playbtn {
+    margin: 1rem 2rem;
     padding: .6rem;
     background-color: #1d9325;
     font-size: 1.7rem;
@@ -42,7 +50,9 @@
 }
 
 #details {
-    margin: 1rem 0;
+    margin-bottom: 2rem;
+    /* margin-left: 2rem; */
+    /* margin-top: 1rem; */
     border-collapse: collapse;
     width: 100%;
     color: #a1a1a1;
@@ -52,17 +62,18 @@
     font-size: 1rem;
     font-weight: 400;
     text-align: left;
-    padding-bottom: 1rem;
+    padding: 1rem;
 }
 
 #details thead {
     border-bottom: 1px solid rgba(166, 166, 166.0, 0.5);
+    position: sticky;
 }
 
 #details td {
-    height: 4rem;
+    height: 2rem;
     position: relative;
-    /* padding: 1rem 0; */
+    padding: 1rem;
 }
 
 #details-play-btn {

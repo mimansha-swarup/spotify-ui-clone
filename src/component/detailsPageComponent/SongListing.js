@@ -1,9 +1,10 @@
 import { BsPlayFill  } from 'react-icons/bs'
-const SongListing = ({props}) => {
+const SongListing = ({props,color}) => {
     return ( 
         <div>
+        <div id="cont-playbtn" style={{backgroundImage:`linear-gradient(${color},#0F0F0F 20vh)`}} >
         <BsPlayFill id="playbtn"  />
-            
+        </div>
             <table id="details">
             <thead>
             <tr>

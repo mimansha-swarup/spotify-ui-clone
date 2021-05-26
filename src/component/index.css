@@ -160,8 +160,9 @@ a:-webkit-any-link {
 /* content */
 
 .content {
-    padding: 0 2rem;
-    overflow: auto;
+    /* padding: 0 2rem; */
+    overflow-y: auto;
+    /* overflow-x: hidden; */
     grid-column: 3/13;
     grid-row: 2/12;
 }
