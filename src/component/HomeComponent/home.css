@@ -39,10 +39,9 @@ body {
     font-weight: 600;
     font-size: 17px;
     display: block;
-    /* word-wrap: normal; */
     align-self: center;
-    /* white-space: nowrap; */
-    margin: 5px 0;
+    margin: .5rem 0;
+    white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
 }
@@ -56,6 +55,7 @@ body {
     align-self: center;
     text-overflow: ellipsis;
     overflow: hidden;
+    white-space: nowrap;
 }
 
 .music-card img {
