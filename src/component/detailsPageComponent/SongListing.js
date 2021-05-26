@@ -16,7 +16,7 @@ const SongListing = ({props}) => {
             <tbody>
             {
                 props.map((delEle)=>(
-                    <tr>
+                    <tr key={delEle.id}>
                         <td ><BsPlayFill id="details-play-btn"  /> <span className="to-hide">{delEle.id}</span></td>
                         <td>{delEle.songName}</td>
                         <td>{delEle.singerName}</td>
