@@ -13,7 +13,7 @@ const PlayListTile = () => {
                 <div className="music-list">
                 {
                     tile.list.map((gerneTile) => ( 
-                        <MusicCard parser = { gerneTile } styleCheck="true"/>  
+                        <MusicCard parser = { gerneTile } styleCheck="true" key={gerneTile.id} />  
                     
                     ))
                 }  
