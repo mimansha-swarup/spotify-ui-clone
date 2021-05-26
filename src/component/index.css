@@ -30,6 +30,8 @@ a:-webkit-any-link {
     color: inherit;
     cursor: pointer;
     text-decoration: none;
+    /* display: inherit; */
+    width: inherit;
 }
 
 .row {

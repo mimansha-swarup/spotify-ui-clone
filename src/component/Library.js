@@ -1,20 +1,27 @@
 import "./Library.css"
 import {fav} from "../db/Librarydb"
+import { BsPlayFill  } from 'react-icons/bs'
 import MusicCard from "./HomeComponent/MusicCard";
+import { NavLink } from 'react-router-dom'
+
 
 
 
 const Library = () => {
     return ( 
-        <div className="content"  >
+        <div className="content" style={{padding:"0 2rem"}} >
     <h1>PlayList</h1>
     <div id="like-grid">
     
-
     <div className="col-rev" id="likedbox">
-    <h3 className="no-of-songs">4 Liked Songs</h3>
-    <h1 className="heading">Liked Songs</h1>    
-    <p>Liggi, Unstoppable, Jab We Met, Om Shanti Om, One Direction</p>            
+    <NavLink to="/collection/tracks">
+        <div>
+        <p>Liggi, Unstoppable, Jab We Met, Om Shanti Om, One Direction</p>            
+        <h1 className="heading">Liked Songs</h1>    
+        <h3 className="no-of-songs">4 Liked Songs</h3>
+        <BsPlayFill className="hover-playbtnl"  />
+        </div>
+    </NavLink>
     </div>
     {
         console.log(fav)
