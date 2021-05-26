@@ -15,7 +15,7 @@ const SearchPg = () => {
                 topPicks.list.map((el)=>(
                     <div className="genreCard" style={{backgroundColor:el.color,minHeight:'11rem',minWidth:'21rem' }}  key={el.id}>
                     <h4>{el.name}</h4>
-                    <img src={baseurl+el.id+".jpg"} alt="cover" style={{width:'7.5rem', height:'7.5rem'}} />
+                    <img loading="lazy" src={baseurl+el.id+".jpg"} alt="cover" style={{width:'7.5rem', height:'7.5rem'}} />
                 </div>
                 ))
                 

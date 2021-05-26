@@ -8,7 +8,7 @@ const MusicCard = ({parser,styleCheck}) => {
             state:{check: parser}
         }}>
         <div className={styleCheck?"music-card neumorphisim-musiccard":"music-card"} >
-        <img src={parser.image} alt="s"  />
+        <img loading="lazy" src={parser.image} alt="s"  />
         
         <BsPlayFill className="hover-playbtn"  />
         
