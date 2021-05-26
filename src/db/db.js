@@ -1,8 +1,12 @@
+import { v4 as uuid_v4 } from "uuid";
+
 export const Songs = [{
 
         title: "Recently Played",
         list: [{
                 song: "Liggi",
+
+                id: uuid_v4(),
                 singer: "Ritviz",
                 image: "https://raw.githubusercontent.com/mimansha-swarup/spotify-ui-clone/main/img_db/Recently%20Played/ligi.jpg",
 
@@ -15,6 +19,7 @@ export const Songs = [{
             },
             // {
             //     song: "Rang Lageya",
+            // id: uuid_v4(),
             //     singer: "Mohit Chauhan",
             //     image: "https://raw.githubusercontent.com/mimansha-swarup/spotify-ui-clone/main/img_db/Recently%20Played/RangLageya.jpg",
             //     songsLst: [{
@@ -27,6 +32,7 @@ export const Songs = [{
             // },
             {
                 song: "Jab We Met",
+                id: uuid_v4(),
                 singer: "Pritam, Sandesh Shandilya",
                 image: "https://raw.githubusercontent.com/mimansha-swarup/spotify-ui-clone/main/img_db/Recently%20Played/met.jpg",
                 songsLst: [{
@@ -39,6 +45,7 @@ export const Songs = [{
             },
             {
                 song: "Raba Mehar Kari",
+                id: uuid_v4(),
                 singer: "Darshan Raval",
                 image: "https://raw.githubusercontent.com/mimansha-swarup/spotify-ui-clone/main/img_db/Recently%20Played/RabaMeharKari.jpg",
                 songsLst: [{
@@ -61,6 +68,7 @@ export const Songs = [{
             },
             {
                 song: "Agent Vinod",
+                id: uuid_v4(),
                 singer: "Pritam",
                 image: "https://raw.githubusercontent.com/mimansha-swarup/spotify-ui-clone/main/img_db/Recently%20Played/Raaabta.jpg",
                 songsLst: [{
@@ -87,6 +95,7 @@ export const Songs = [{
             },
             {
                 song: "Kesari",
+                id: uuid_v4(),
                 singer: "Various Artist",
                 duration: "5:13",
                 image: "https://raw.githubusercontent.com/mimansha-swarup/spotify-ui-clone/main/img_db/Recently%20Played/Kesari.jpg",
@@ -132,6 +141,7 @@ export const Songs = [{
         title: "Made For You",
         list: [{
                 song: "100 Ways",
+                id: uuid_v4(),
                 singer: "Jackson Wang",
                 image: "https://raw.githubusercontent.com/mimansha-swarup/spotify-ui-clone/main/img_db/MadeForYou/100ways.jpg",
                 songsLst: [{
@@ -142,6 +152,7 @@ export const Songs = [{
                 }]
             }, {
                 song: "Before You GO",
+                id: uuid_v4(),
                 singer: "Lewis Capaldi",
                 image: "https://raw.githubusercontent.com/mimansha-swarup/spotify-ui-clone/main/img_db/MadeForYou/BeforeYouGo.jpg",
                 songsLst: [{
@@ -153,6 +164,7 @@ export const Songs = [{
             },
             {
                 song: "Changes",
+                id: uuid_v4(),
                 singer: "XXXTENTAICON",
                 image: "https://raw.githubusercontent.com/mimansha-swarup/spotify-ui-clone/main/img_db/MadeForYou/Changes.jpg",
                 songsLst: [{
@@ -164,6 +176,7 @@ export const Songs = [{
             },
             {
                 song: "Higher Power",
+                id: uuid_v4(),
                 singer: "Coldplay",
                 image: "https://raw.githubusercontent.com/mimansha-swarup/spotify-ui-clone/main/img_db/MadeForYou/HighPower.jpg",
                 songsLst: [{
@@ -175,6 +188,7 @@ export const Songs = [{
             },
             {
                 song: "Unstoppable",
+                id: uuid_v4(),
                 singer: "Dino James",
                 image: "https://raw.githubusercontent.com/mimansha-swarup/spotify-ui-clone/main/img_db/MadeForYou/Unstoppable.jpg",
                 songsLst: [{
@@ -189,6 +203,7 @@ export const Songs = [{
         title: "More From Darshan Raval",
         list: [{
                 song: "Barish",
+                id: uuid_v4(),
                 singer: "Darshan Raval",
                 image: "https://raw.githubusercontent.com/mimansha-swarup/spotify-ui-clone//main/img_db/More%20From%20Darshan%20Raval/Abphirsejbbaarishhogi.jpg",
                 songsLst: [{
@@ -199,6 +214,7 @@ export const Songs = [{
                 }]
             }, {
                 song: "Bhula Dunga",
+                id: uuid_v4(),
                 singer: "Darshan Raval",
                 image: "https://raw.githubusercontent.com/mimansha-swarup/spotify-ui-clone/main/img_db/More%20From%20Darshan%20Raval/Bhuladunga.jpg",
                 songsLst: [{
@@ -210,6 +226,7 @@ export const Songs = [{
             },
             {
                 song: "Hawa Banke",
+                id: uuid_v4(),
                 singer: "Darshan Raval",
                 image: "https://raw.githubusercontent.com/mimansha-swarup/spotify-ui-clone/main/img_db/More%20From%20Darshan%20Raval/HawaBanke.jpg",
                 songsLst: [{
@@ -221,6 +238,7 @@ export const Songs = [{
             },
             {
                 song: "Kaash Aisa Hota",
+                id: uuid_v4(),
                 singer: "Darshan Raval",
                 image: "https://raw.githubusercontent.com/mimansha-swarup/spotify-ui-clone/main/img_db/More%20From%20Darshan%20Raval/KaashAisaHota.jpg",
                 songsLst: [{
@@ -232,6 +250,7 @@ export const Songs = [{
             },
             {
                 song: "Ek Tarfa",
+                id: uuid_v4(),
                 singer: "Darshan Raval",
                 image: "https://raw.githubusercontent.com/mimansha-swarup/spotify-ui-clone/main/img_db/More%20From%20Darshan%20Raval/ek-tarfa.jpg",
                 songsLst: [{
@@ -247,6 +266,7 @@ export const Songs = [{
         title: "Popular Band",
         list: [{
             song: "One Direction",
+            id: uuid_v4(),
             singer: "Various Artist",
             image: "https://raw.githubusercontent.com/mimansha-swarup/spotify-ui-clone//main/img_db/Popular%20Band/oneDirection.jpg",
             songsLst: [{
@@ -261,6 +281,7 @@ export const Songs = [{
         title: "You Might Like",
         list: [{
                 song: "Tamasha",
+                id: uuid_v4(),
                 singer: "A.R Rahman",
                 image: "https://raw.githubusercontent.com/mimansha-swarup/spotify-ui-clone//main/img_db/you%20might%20like/AgarTumSaat.jpg",
                 songsLst: [{
@@ -286,6 +307,7 @@ export const Songs = [{
                 }]
             }, {
                 song: "Ghajni",
+                id: uuid_v4(),
                 singer: "A. R. Rahman",
                 image: "https://raw.githubusercontent.com/mimansha-swarup/spotify-ui-clone/main/img_db/you%20might%20like/Guzarish.jpg",
                 songsLst: [{
@@ -302,6 +324,7 @@ export const Songs = [{
             },
             {
                 song: "Om Shanti Om",
+                id: uuid_v4(),
                 singer: "Various Artist",
                 image: "https://raw.githubusercontent.com/mimansha-swarup/spotify-ui-clone/main/img_db/you%20might%20like/Main%20agar%20kahoon.jpg",
                 songsLst: [{
@@ -323,6 +346,7 @@ export const Songs = [{
             },
             {
                 song: "Kabir Singh",
+                id: uuid_v4(),
                 singer: "Various Artists",
                 image: "https://raw.githubusercontent.com/mimansha-swarup/spotify-ui-clone/main/img_db/you%20might%20like/kaise%20hua.jpg",
                 songsLst: [{
@@ -344,6 +368,7 @@ export const Songs = [{
             },
             {
                 song: "Main Bola Hey!",
+                id: uuid_v4(),
                 singer: "Karthik Rao",
                 image: "https://raw.githubusercontent.com/mimansha-swarup/spotify-ui-clone/main/img_db/you%20might%20like/wo%20boli%20hey.jpg",
                 songsLst: [{
@@ -360,6 +385,7 @@ export const Songs = [{
         title: "Podcast",
         list: [{
                 song: "The Sadhguru Podcast",
+                id: uuid_v4(),
                 singer: "",
                 image: "https://raw.githubusercontent.com/mimansha-swarup/spotify-ui-clone//main/img_db/podcast/sadhguru.jpg",
                 songsLst: [{
@@ -375,6 +401,7 @@ export const Songs = [{
                 }]
             }, {
                 song: "The History of India",
+                id: uuid_v4(),
                 singer: "",
                 image: "https://raw.githubusercontent.com/mimansha-swarup/spotify-ui-clone/main/img_db/podcast/India.jpg",
                 songsLst: [{
@@ -396,6 +423,7 @@ export const Songs = [{
             },
             {
                 song: "The Musafir Stories",
+                id: uuid_v4(),
                 singer: "",
                 image: "https://raw.githubusercontent.com/mimansha-swarup/spotify-ui-clone/main/img_db/podcast/Musafir.jpg",
                 songsLst: [{
@@ -412,6 +440,7 @@ export const Songs = [{
             },
             {
                 song: "Podcast Junkies",
+                id: uuid_v4(),
                 singer: "",
                 image: "https://raw.githubusercontent.com/mimansha-swarup/spotify-ui-clone/main/img_db/podcast/junkies.jpg",
                 songsLst: [{
@@ -423,6 +452,7 @@ export const Songs = [{
             },
             {
                 song: "7 Good Minutes Daily",
+                id: uuid_v4(),
                 singer: "",
                 image: "https://raw.githubusercontent.com/mimansha-swarup/spotify-ui-clone/main/img_db/podcast/7minutes.jpg",
                 songsLst: [{
@@ -437,6 +467,7 @@ export const Songs = [{
         title: "90s Hit",
         list: [{
                 song: "Pehla Nasha",
+                id: uuid_v4(),
                 singer: "Udit Narayan",
                 image: "https://raw.githubusercontent.com/mimansha-swarup/spotify-ui-clone//main/img_db/90s%20hit/pehlanasha.jpg",
                 songsLst: [{
@@ -447,6 +478,7 @@ export const Songs = [{
                 }]
             }, {
                 song: "Dil Chata Hai",
+                id: uuid_v4(),
                 singer: "Shankar, Eshan-Loy",
                 image: "https://raw.githubusercontent.com/mimansha-swarup/spotify-ui-clone/main/img_db/90s%20hit/wohldkihaikahan.jpg",
                 songsLst: [{
@@ -458,6 +490,7 @@ export const Songs = [{
             },
             {
                 song: "Humko Humise Chura Lo",
+                id: uuid_v4(),
                 singer: "Lata Mangeshkar, Udit Narayan",
                 image: "https://raw.githubusercontent.com/mimansha-swarup/spotify-ui-clone/main/img_db/90s%20hit/HumkoHUmiSeChuraLO.jpg",
                 songsLst: [{
@@ -469,6 +502,7 @@ export const Songs = [{
             },
             {
                 song: "Tujhe Dekha Toh",
+                id: uuid_v4(),
                 singer: "Lata Mangeshkar, Kumar Sanu",
                 image: "https://raw.githubusercontent.com/mimansha-swarup/spotify-ui-clone/main/img_db/90s%20hit/tujheDekhaTOh.jpg",
                 songsLst: [{
@@ -480,6 +514,7 @@ export const Songs = [{
             },
             {
                 song: "Tadap Tadap",
+                id: uuid_v4(),
                 singer: "KK, Dominique",
                 duration: "6:37",
                 image: "https://raw.githubusercontent.com/mimansha-swarup/spotify-ui-clone/main/img_db/90s%20hit/chaandchupa.jpg",
