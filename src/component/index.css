@@ -67,6 +67,7 @@ a:-webkit-any-link {
     vertical-align: middle;
     font-size: 2rem;
     color: rgba(255, 255, 255, 0.60);
+    cursor: pointer;
 }
 
 .upgrade-btn {
