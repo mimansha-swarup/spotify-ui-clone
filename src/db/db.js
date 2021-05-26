@@ -134,6 +134,36 @@ export const Songs = [{
                     songName: "Deh Shiva(Female Version)",
                     singerName: "Jasleen Royal",
                     duration: "2:35",
+                }, {
+                    id: "8",
+                    songName: "Ajj Singh Garjega",
+                    singerName: "Jazzy B",
+                    duration: "4:02",
+                }, {
+                    id: "9",
+                    songName: "Deh Shiva(Male Version)",
+                    singerName: "Sukwinder Singh",
+                    duration: "3:11",
+                }, {
+                    id: "10",
+                    songName: "Deh Shiva(Female Version)",
+                    singerName: "Jasleen Royal",
+                    duration: "2:35",
+                }, {
+                    id: "11",
+                    songName: "Ajj Singh Garjega",
+                    singerName: "Jazzy B",
+                    duration: "4:02",
+                }, {
+                    id: "12",
+                    songName: "Deh Shiva(Male Version)",
+                    singerName: "Sukwinder Singh",
+                    duration: "3:11",
+                }, {
+                    id: "13",
+                    songName: "Deh Shiva(Female Version)",
+                    singerName: "Jasleen Royal",
+                    duration: "2:35",
                 }]
             }
         ]

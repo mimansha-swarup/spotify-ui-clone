@@ -1,5 +1,8 @@
+import { v4 as uuid_v4 } from "uuid";
+
 export const fav = [{
     song: "Liggi",
+    id: uuid_v4(),
     singer: "Ritviz",
     image: "https://raw.githubusercontent.com/mimansha-swarup/spotify-ui-clone/main/img_db/Recently%20Played/ligi.jpg",
 
@@ -11,6 +14,7 @@ export const fav = [{
     }]
 }, {
     song: "Unstoppable",
+    id: uuid_v4(),
     singer: "Dino James",
     image: "https://raw.githubusercontent.com/mimansha-swarup/spotify-ui-clone/main/img_db/MadeForYou/Unstoppable.jpg",
     songsLst: [{
@@ -21,6 +25,7 @@ export const fav = [{
     }]
 }, {
     song: "Jab We Met",
+    id: uuid_v4(),
     singer: "Pritam, Sandesh Shandilya",
     image: "https://raw.githubusercontent.com/mimansha-swarup/spotify-ui-clone/main/img_db/Recently%20Played/met.jpg",
     songsLst: [{
@@ -32,6 +37,7 @@ export const fav = [{
 
 }, {
     song: "Om Shanti Om",
+    id: uuid_v4(),
     singer: "Various Artist",
     image: "https://raw.githubusercontent.com/mimansha-swarup/spotify-ui-clone/main/img_db/you%20might%20like/Main%20agar%20kahoon.jpg",
     songsLst: [{
@@ -52,6 +58,7 @@ export const fav = [{
     }]
 }, {
     song: "One Direction",
+    id: uuid_v4(),
     singer: "Various Artist",
     image: "https://raw.githubusercontent.com/mimansha-swarup/spotify-ui-clone//main/img_db/Popular%20Band/oneDirection.jpg",
     songsLst: [{
