@@ -8,6 +8,7 @@ import ScrollToTop from './component/commonComponent/ScrollToTop';
 import Library from './component/Library';
 import LikedSongs from './component/Liked';
 import SongPage from './component/detailsPageComponent/SongPage';
+import CreatePlaylist from './component/CreatePlaylist';
 
 
 
@@ -28,6 +29,7 @@ function App() {
                     <Route path='/search' component={SearchPg} />
                     <Route exact path='/collection' component={Library} />
                     <Route  path='/collection/tracks' component={LikedSongs} />
+                    <Route  path='/add' component={CreatePlaylist} />
                     <Route  path='/songs/:id' component={SongPage} />
                     
                     

@@ -12,8 +12,7 @@ const NavBar = () => {
           <div className="nav-grid">
             <IoChevronBackCircleOutline onClick={()=>history.goBack()} />
             <IoChevronForwardCircleOutline onClick={()=>history.goForward()} />
-            {console.log(history.goBack)}
-            {console.log(history.goForward)}
+            
           </div>
           <div className="nav-grid">
             <button className="upgrade-btn">

@@ -23,14 +23,12 @@ const Library = () => {
         </div>
     </NavLink>
     </div>
-    {
-        console.log(fav)
-    }
+    
     {
         
         fav.map((parser) => (
 
-            <MusicCard parser={parser} styleCheck="" key={parser.songsLst.id} />
+            <MusicCard parser={parser} styleCheck="" key={parser.song} />
             
             
         ) )

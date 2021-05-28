@@ -163,7 +163,7 @@ a:-webkit-any-link {
 
 .content {
     /* padding: 0 2rem; */
-    overflow-y: auto;
+    overflow: auto;
     /* overflow-x: hidden; */
     grid-column: 3/13;
     grid-row: 2/12;
@@ -239,8 +239,10 @@ a:-webkit-any-link {
     flex: 1 1 0;
     display: flex;
     flex-direction: column;
+    justify-self: center;
+    /* vertical-align: bottom; */
     /* justify-content: space-evenly; */
-    justify-content: center;
+    /* justify-content: center; */
     /* align-items: center; */
 }
 
@@ -248,12 +250,15 @@ a:-webkit-any-link {
     color: rgba(255, 255, 255, 0.75);
     font-size: 1.2vw;
     align-items: center;
-    padding: 0 5rem;
+    vertical-align: middle;
+    transform: translate(0%, 40%);
+    /* padding: 0 5rem; */
 }
 
-.song-time {
-    margin-top: .2rem;
-}
+
+/* .song-time {
+     margin-top: .2rem; 
+} */
 
 .song-time hr {
     /* width: 100px; */
@@ -264,7 +269,7 @@ a:-webkit-any-link {
 }
 
 .song-time p {
-    margin: 0 auto;
+    /* margin: 0 auto; */
     padding: 5px;
     color: rgba(255, 255, 255, 0.55);
 }
