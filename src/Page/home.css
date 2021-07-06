@@ -139,4 +139,7 @@ body {
     .hover-playbtn {
         display: none;
     }
+    .music-card:hover .title {
+        color: #28CC33;
+    }
 }

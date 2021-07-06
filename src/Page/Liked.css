@@ -51,8 +51,6 @@
 
 #details {
     margin-bottom: 2rem;
-    /* margin-left: 2rem; */
-    /* margin-top: 1rem; */
     border-collapse: collapse;
     width: 100%;
     color: #a1a1a1;
@@ -63,10 +61,6 @@
     font-weight: 400;
     text-align: left;
     padding: 1rem;
-}
-
-.pd {
-    padding: 0 1rem;
 }
 
 #details thead {
@@ -98,4 +92,59 @@
 
 #details tbody tr:hover .to-hide {
     visibility: hidden;
+}
+
+.shuffle-txt {
+    display: none;
+}
+
+.menu-btn {
+    display: none;
+}
+
+@media only screen and (max-width: 780px) {
+    #headerbox img,
+    #headerbox h1 {
+        display: none;
+    }
+    #headerbox {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    #headerbox h5 {
+        font-size: 1.5rem;
+        margin: 0 0 0 0;
+    }
+    #cont-playbtn {
+        padding: 1.5rem 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    #playbtn {
+        display: none;
+    }
+    .shuffle-txt {
+        display: block;
+        padding: .6rem 2rem;
+        background-color: #1d9325;
+        border-radius: 2rem;
+        text-transform: uppercase;
+    }
+    #details thead,
+    #details tbody {
+        display: none;
+    }
+    .library-card {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        width: 90%;
+    }
+    .menu-btn {
+        display: block;
+        font-size: 1.5rem;
+        color: #a1a1a1;
+    }
 }

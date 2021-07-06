@@ -6,7 +6,7 @@ const DetailHead = ({imgsrc, heading,desc,color}) => {
                 <div className="col">
                     <h5>{desc}</h5>
                     <h1>{heading}</h1>
-                    <h5>PlayList</h5>
+                    <h5 className="hide">PlayList</h5>
                 </div>
             </div>
         </div>

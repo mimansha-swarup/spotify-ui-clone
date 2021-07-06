@@ -1,6 +1,6 @@
 import { AiOutlineHeart  } from 'react-icons/ai'
 import { CgMaximize  } from 'react-icons/cg'
-import { FaPlayCircle  } from 'react-icons/fa'
+import { FaPlay  } from 'react-icons/fa'
 
 const SongDetails = () => {
     return ( 
@@ -11,7 +11,7 @@ const SongDetails = () => {
                     <small>singer</small>
                 </div>
                 <AiOutlineHeart className="song-detail-icon" />
-                <FaPlayCircle className="mob-view-playbtn" />
+                <FaPlay className="mob-view-playbtn" />
                 <CgMaximize className="song-detail-icon"  />
             </div>
      );

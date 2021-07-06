@@ -335,6 +335,7 @@ a:-webkit-any-link {
     .mob-view-playbtn {
         display: block;
         font-size: 1.5rem;
+        color: #a1a1a1;
     }
     .song-details {
         padding: 5px;

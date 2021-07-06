@@ -2,7 +2,6 @@
     /* position: absolute; */
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(2, 1fr);
     overflow: auto;
     grid-gap: 2vw;
     /* padding: 2rem; */
@@ -38,9 +37,6 @@
 .sub-navbar {
     display: flex;
     justify-content: center;
-    /* position: fixed;
-    z-index: 1;
-    right: 35vw; */
 }
 
 .sub-navbar button {
@@ -97,9 +93,21 @@
 
 @media only screen and (max-width: 780px) {
     #like-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
-    /* #likedbox {
-        grid-column: 2;
-    } */
+    #likedbox {
+        grid-column: 1;
+    }
+    .library-card {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        width: 90%;
+    }
+    .library-card img {
+        margin: 0 1rem 0 0;
+    }
+    .hover-playbtnl {
+        display: none;
+    }
 }
