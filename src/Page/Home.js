@@ -1,5 +1,5 @@
-import PlayListTile from "./HomeComponent/PlayListTIle"
-import './HomeComponent/home.css'
+import PlayListTile from "../Layout/PlayListTIle"
+import './home.css'
 import { useEffect } from "react";
 
 const Home = () => {
@@ -8,10 +8,9 @@ const Home = () => {
     }, [])
     return ( 
         <div className="content">
-        <PlayListTile />
- 
-        
-        </div> );
+            <PlayListTile />        
+        </div> 
+    );
 }
  
 export default Home;

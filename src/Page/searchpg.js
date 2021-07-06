@@ -1,4 +1,4 @@
-import '../component/searchPg.css';
+import './searchPg.css';
 import {category,topPicks} from '../db/searchPgDb';
 // import { FaPlayCircle  } from 'react-icons/fa'
 // import { useEffect } from 'react';

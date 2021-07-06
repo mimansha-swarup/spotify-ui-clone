@@ -5,21 +5,17 @@ import { IoVolumeLow  } from 'react-icons/io5'
 import { HiDeviceMobile  } from 'react-icons/hi'
 
 
-import SongController from './playbar_songController'
-import SongDetails from './PlayBar_SongDetails'
+import SongController from '../component/playbar_songController'
+import SongDetails from '../component/PlayBar_SongDetails'
 
 
 const PlayBar = (props) => {
     
     return ( 
         // <IconContext.Provider value={{ }}>
-        <footer className="music-bar">
-            
+        <footer className="music-bar">            
             <SongDetails />
-            <SongController />
-            
-            
-
+            <SongController />            
             <div className="volume-controller " >
                 <HiDeviceMobile className ="volume-controller-icons" />
                 <AiOutlineMenuUnfold className ="volume-controller-icons" />

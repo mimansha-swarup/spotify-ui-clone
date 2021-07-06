@@ -1,7 +1,7 @@
 import "./Library.css"
 import {fav} from "../db/Librarydb"
 import { BsPlayFill  } from 'react-icons/bs'
-import MusicCard from "./HomeComponent/MusicCard";
+import MusicCard from "../component/MusicCard";
 import { NavLink } from 'react-router-dom'
 
 
