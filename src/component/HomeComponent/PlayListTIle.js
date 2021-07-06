@@ -7,9 +7,7 @@ const PlayListTile = () => {
         Songs.map((tile) => ( 
             <div className = "genre-tile" key = { tile.title } >
                 <div className = "genre-header" >
-                    {/* text-overflow: ellipsis;
-        overflow: hidden;
-        white-space: nowrap; */}
+                   
                     <h1 style = {{ fontSize: "clamp(20px,2vw ,24px)" , textOverflow:"ellipsis",overflow:"hidden",whiteSpace:"nowrap" } } > { tile.title } </h1>  
                     <h5 style = {{ color: "rgba(255,255,255,0.70)", textOverflow:"ellipsis",overflow:"hidden",whiteSpace:"nowrap"  } } > See more </h5> 
                 </div> 

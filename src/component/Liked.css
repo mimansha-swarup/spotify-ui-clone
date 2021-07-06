@@ -65,6 +65,10 @@
     padding: 1rem;
 }
 
+.pd {
+    padding: 0 1rem;
+}
+
 #details thead {
     border-bottom: 1px solid rgba(166, 166, 166.0, 0.5);
     position: sticky;

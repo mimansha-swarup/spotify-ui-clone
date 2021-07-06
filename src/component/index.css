@@ -5,6 +5,7 @@ body {
     --sideBarBg: #0a0a0a;
     --primaryBg: #0f0f0f;
     background-color: var(--primaryBg);
+    overflow: hidden;
 }
 
 .App {
@@ -110,6 +111,10 @@ a:-webkit-any-link {
 .user-icon {
     vertical-align: middle;
     font-size: 1.2rem;
+}
+
+.pd {
+    padding: 0 1rem;
 }
 
 
@@ -322,12 +327,6 @@ a:-webkit-any-link {
     .hide {
         display: none;
     }
-    /* {
-        display: none;
-    } */
-    /* .song-detail-icon {
-        display: none;
-    } */
     .song-details img {
         height: 50px;
         width: 50px;
@@ -372,6 +371,28 @@ a:-webkit-any-link {
         padding: 0 .5rem;
         grid-column: 1/13;
         grid-row: 1/11;
+    }
+    .song-name {
+        animation: slidein 2s ease-in-out infinite;
+        /* margin-right: 10000px; */
+        overflow: hidden;
+        text-overflow: clip;
+        /* z-index: -1; */
+    }
+    @keyframes slidein {
+        /* from {
+            margin-left: 100%;
+        }
+        to {
+            margin-left: -20%;
+        } */
+        from {
+            transform: translateX(10%);
+            /* margin-left: 100%; */
+        }
+        to {
+            transform: translateX(-60%);
+        }
     }
 }
 
