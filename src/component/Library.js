@@ -9,7 +9,7 @@ import { NavLink } from 'react-router-dom'
 
 const Library = () => {
     return ( 
-        <div className="content" style={{padding:"0 2rem"}} >
+        <div className="content"  >
     <h1>PlayList</h1>
     <div id="like-grid">
     

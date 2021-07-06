@@ -1,54 +1,73 @@
-#top-Category {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 1.5rem;
-    overflow-x: scroll;
-    /* min-height: 11rem;
+    #top-Category {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1.5rem;
+        overflow-x: scroll;
+        grid-auto-flow: row dense;
+        /* min-height: 11rem;
     min-width: 21rem; */
-}
-
-#genreCategory {
-    margin-bottom: 5rem;
-    display: grid;
-    /* grid-template-columns: repeat(minmax(auto-fill, 6), auto-fill); */
-    /* grid-template-columns: repeat(minmax(5, 6), 1fr); */
-    grid-template-columns: repeat( 6, 1fr);
-    grid-gap: 1.5vw;
-    overflow: auto;
-}
-
-.genreCard {
-    min-height: 11rem;
-    min-width: 11rem;
-    border-radius: .5rem;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    justify-content: space-between;
-}
-
-.genreCard h4 {
-    padding-left: 1rem;
-    padding-top: .5rem;
-    margin: 0%;
-    font-size: 20px;
-    font-weight: 500;
-}
-
-.genreCard img {
-    padding: 0%;
-    height: 6rem;
-    width: 6rem;
-    transform: rotate( 30deg) translate(18%, -2%);
-    align-self: flex-end;
-    justify-self: self-end;
-    /* object-position: 30px 60px; */
-}
-
-#top-Category::-webkit-scrollbar {
-    display: none;
-}
-
-#genreCategory::-webkit-scrollbar {
-    display: none;
-}
+    }
+    
+    #genreCategory {
+        grid-auto-flow: row dense;
+        margin-bottom: 5rem;
+        display: grid;
+        grid-template-columns: repeat( 6, 1fr);
+        grid-gap: 1.5vw;
+        overflow: auto;
+    }
+    
+    .genreCard {
+        min-height: 10rem;
+        min-width: 10rem;
+        border-radius: .5rem;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        justify-content: space-between;
+    }
+    
+    .genreCard h4 {
+        padding-left: 1rem;
+        padding-top: .5rem;
+        margin: 0%;
+        font-size: 20px;
+        font-weight: 500;
+    }
+    
+    .genreCard img {
+        padding: 0%;
+        height: 6rem;
+        width: 6rem;
+        transform: rotate( 30deg) translate(18%, -2%);
+        align-self: flex-end;
+        justify-self: self-end;
+        /* object-position: 30px 60px; */
+    }
+    
+    #top-Category::-webkit-scrollbar {
+        display: none;
+    }
+    
+    #genreCategory::-webkit-scrollbar {
+        display: none;
+    }
+    
+    @media only screen and (max-width: 1200px) {
+        #top-Category {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        #genreCategory {
+            grid-template-columns: repeat( 4, 1fr);
+        }
+    }
+    
+    @media only screen and (max-width: 780px) {
+        #top-Category {
+            grid-template-columns: repeat(1, 1fr);
+            overflow: hidden;
+        }
+        #genreCategory {
+            grid-template-columns: repeat( 2, 1fr);
+        }
+    }

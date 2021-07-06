@@ -94,3 +94,12 @@
     visibility: hidden;
     /* margin: 0%; */
 }
+
+@media only screen and (max-width: 780px) {
+    #like-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    /* #likedbox {
+        grid-column: 2;
+    } */
+}

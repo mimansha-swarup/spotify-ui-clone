@@ -7,7 +7,7 @@ const SearchPg = () => {
     const baseurl = 'https://raw.githubusercontent.com/mimansha-swarup/spotify-ui-clone/main/img_db/searchPGImg/';
     
     return ( 
-        <div className="content" style={{padding:"0 2rem"}}>
+        <div className="content" >
             <div>
             <h2>{topPicks.title}</h2>
             <div id="top-Category">

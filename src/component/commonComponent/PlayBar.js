@@ -20,7 +20,7 @@ const PlayBar = (props) => {
             
             
 
-            <div className="volume-controller row" >
+            <div className="volume-controller " >
                 <HiDeviceMobile className ="volume-controller-icons" />
                 <AiOutlineMenuUnfold className ="volume-controller-icons" />
                 <IoVolumeLow className ="volume-controller-icons" />

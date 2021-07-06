@@ -25,7 +25,13 @@ body {
 .music-card {
     margin: 10px 0;
     padding: 5px 1rem;
-    max-width: 9.4rem;
+    /* max-width: 9.4rem; */
+    /* min-width: fit-content; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: clamp(6.3rem, 15vw, 9.4rem);
     background-color: #181818;
     display: block;
     text-align: left;
@@ -60,8 +66,9 @@ body {
 
 .music-card img {
     padding: 10px 0;
-    height: 150px;
-    width: 150px;
+    /* height: 150px; */
+    height: clamp(100px, 15vw, 150px);
+    width: clamp(100px, 15vw, 150px);
     object-position: center;
     object-fit: cover;
 }
@@ -117,4 +124,19 @@ body {
 .neumorphisim-musiccard:hover {
     background-color: inherit;
     box-shadow: inset 12px 12px 20px #0a0a0a, inset -12px -12px 20px #212121;
+}
+
+@media only screen and (max-width: 780px) {
+    .neumorphisim-musiccard {
+        box-shadow: none;
+    }
+    .neumorphisim-musiccard:hover {
+        opacity: .8;
+        box-shadow: none;
+        background-color: #181818;
+        transform: scale(.95);
+    }
+    .hover-playbtn {
+        display: none;
+    }
 }

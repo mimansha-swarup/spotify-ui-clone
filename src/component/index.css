@@ -139,7 +139,8 @@ a:-webkit-any-link {
     line-height: 26px;
     text-align: start;
     width: 90%;
-    font-size: minmax(1.2vw, 1rem);
+    font-size: clamp(.8rem, 1.2vw, 1.2rem);
+    display: flex;
 }
 
 .nav-tile:hover {
@@ -156,17 +157,18 @@ a:-webkit-any-link {
     font-size: minmax(2vw, 1.5rem);
     margin-right: 10px;
     margin-left: 5px;
+    align-self: center;
+    justify-self: center;
 }
 
 
 /* content */
 
 .content {
-    /* padding: 0 2rem; */
     overflow: auto;
-    /* overflow-x: hidden; */
     grid-column: 3/13;
     grid-row: 2/12;
+    padding: 0 2rem;
 }
 
 
@@ -208,6 +210,12 @@ a:-webkit-any-link {
     color: rgba(255, 255, 255, 0.55);
 }
 
+.mob-view-playbtn {
+    align-self: center;
+    /* visibility: hidden */
+    display: none;
+}
+
 
 /* fix padding */
 
@@ -240,25 +248,16 @@ a:-webkit-any-link {
     display: flex;
     flex-direction: column;
     justify-self: center;
-    /* vertical-align: bottom; */
-    /* justify-content: space-evenly; */
-    /* justify-content: center; */
-    /* align-items: center; */
 }
 
 .song-controller-icons {
     color: rgba(255, 255, 255, 0.75);
-    font-size: 1.2vw;
+    font-size: clamp(1rem, 2vw, 1.5rem);
     align-items: center;
     vertical-align: middle;
     transform: translate(0%, 40%);
     /* padding: 0 5rem; */
 }
-
-
-/* .song-time {
-     margin-top: .2rem; 
-} */
 
 .song-time hr {
     /* width: 100px; */
@@ -276,6 +275,7 @@ a:-webkit-any-link {
 
 .volume-controller {
     /* width: 0; */
+    display: flex;
     flex: 1 1 0;
     align-items: center;
     justify-items: center;
@@ -297,6 +297,101 @@ a:-webkit-any-link {
     margin: 0;
     border: none;
     padding: 0;
+}
+
+@media only screen and (max-width: 780px) {
+    /* For tablets: */
+    .active-now:-webkit-any-link {
+        background: none;
+        border-radius: 0;
+        box-shadow: none;
+    }
+    .music-bar {
+        /* display: none; */
+        grid-row: 11;
+        padding: 0 .5rem;
+        height: 3.5rem;
+    }
+    .song-controller,
+    .volume-controller,
+    .song-detail-icon,
+    .column small,
+    .side-nav hr,
+    .nav-details,
+    .logo,
+    .hide {
+        display: none;
+    }
+    /* {
+        display: none;
+    } */
+    /* .song-detail-icon {
+        display: none;
+    } */
+    .song-details img {
+        height: 50px;
+        width: 50px;
+        align-self: center;
+    }
+    .mob-view-playbtn {
+        display: block;
+        font-size: 1.5rem;
+    }
+    .song-details {
+        padding: 5px;
+        justify-content: space-between;
+    }
+    .side-nav {
+        grid-column: 1/13;
+        grid-row: 12;
+        display: flex;
+        justify-content: space-around;
+        padding: .3rem 0 0 0;
+    }
+    .side-nav hr {
+        display: none;
+    }
+    .tile-logo {
+        align-self: center;
+        justify-self: center;
+        display: block;
+        text-align: center;
+        font-size: clamp(1rem, 7vw, 1.7rem);
+    }
+    .nav-tile {
+        justify-content: center;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+    .hide {
+        display: none;
+    }
+    .content {
+        padding: 0 .5rem;
+        grid-column: 1/13;
+        grid-row: 1/11;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .nav-tile span {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .tile-logo {
+        font-size: clamp(1.5rem, 3vw, 1.5rem);
+    }
+    .logo {
+        visibility: hidden;
+    }
+    .active-now:-webkit-any-link {
+        background: none;
+        border-radius: 0;
+        box-shadow: none;
+    }
 }
 
 
