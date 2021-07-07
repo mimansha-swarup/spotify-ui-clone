@@ -1,7 +1,18 @@
 {
-    "short_name": "Spot On",
-    "name": "SPOT ON",
+    "name": "Spot On",
+    "short_name": "spot on",
+    "theme_color": "#0a0a0a",
+    "background_color": "#0a0a0a",
+    "display": "standalone",
+    "scope": "/",
+    "start_url": "/",
     "icons": [{
+            "src": "maskable_iconx192.png",
+            "sizes": "192x192",
+            "type": "image/x-icon",
+            "purpose": "any maskable"
+
+        }, {
             "src": "favicon.ico",
             "sizes": "64x64 32x32 24x24 16x16",
             "type": "image/x-icon"
@@ -16,10 +27,7 @@
             "type": "image/png",
             "sizes": "512x512"
         }
-    ],
+    ]
 
-    "start_url": ".",
-    "display": "fullscreen",
-    "theme_color": "#000000",
-    "background_color": "#0a0a0a"
+
 }
