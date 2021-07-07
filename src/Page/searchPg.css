@@ -66,6 +66,10 @@
         display: none;
     }
     
+    .topCard {
+        height: clamp(10rem, 7vw, 11.5rem);
+    }
+    
     @media only screen and (max-width: 1200px) {
         #top-Category {
             grid-template-columns: repeat(2, 1fr);

@@ -102,6 +102,10 @@
     display: none;
 }
 
+.mobhide {
+    display: none;
+}
+
 @media only screen and (max-width: 780px) {
     #headerbox img,
     #headerbox h1 {
@@ -133,14 +137,13 @@
         text-transform: uppercase;
     }
     #details thead,
-    #details tbody {
+    tbody tr {
         display: none;
     }
-    .library-card {
+    .mobhide {
         display: flex;
-        flex-direction: row;
-        justify-content: left;
-        width: 90%;
+        flex-direction: column;
+        justify-content: center;
     }
     .menu-btn {
         display: block;

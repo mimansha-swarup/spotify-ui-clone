@@ -181,12 +181,14 @@ a:-webkit-any-link {
 
 .logo {
     position: relative;
-    width: 10vw;
-    height: 15vh;
-    /* width: 3fr; */
-    padding: 10px;
+    width: 9vw;
+    height: 10vh;
+    /* transform: scale(.5); */
+    padding: 2rem 1rem;
     object-position: center;
-    object-fit: cover;
+    /* object-position: left; */
+    /* align-self: flex-start; */
+    object-fit: contain;
 }
 
 .music-bar {

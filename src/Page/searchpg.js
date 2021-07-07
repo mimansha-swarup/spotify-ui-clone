@@ -13,7 +13,7 @@ const SearchPg = () => {
                 <div id="top-Category">
                 {
                     topPicks.list.map((el)=>(
-                    <div className="genreCard" style={{backgroundColor:el.color, }}  key={el.id}>
+                    <div className="genreCard topCard" style={{backgroundColor:el.color, }}  key={el.id}>
                         <h4  >{el.name}</h4>
                         <img  loading="lazy" src={baseurl+el.id+".jpg"} alt="cover" />
                     </div>
